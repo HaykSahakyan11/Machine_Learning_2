@@ -1,0 +1,11 @@
+# Knight’s Possible Moves
+p_y = int(input())
+p_x = int(input())
+print(p_y - 1, p_x - 2)
+print(p_y + 1, p_x - 2)
+print(p_y - 2, p_x - 1)
+print(p_y - 2, p_x + 1)
+print(p_y - 1, p_x + 2)
+print(p_y + 1, p_x + 2)
+print(p_y + 2, p_x - 1)
+print(p_y + 2, p_x + 1)
