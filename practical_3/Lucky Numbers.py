@@ -13,5 +13,15 @@ def is_lucky_num(n):
     return even == odd
 
 
+def is_lucky_num_2(n):
+    odd, even = 0, 0
+    while n > 0:
+        odd += n % 10
+        n //= 10
+        even += n % 10
+        n //= 10
+    return odd == even
+
+
 a_num = int(input())
 print(['No', 'Yes'][is_lucky_num(a_num)])
